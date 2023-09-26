@@ -274,21 +274,6 @@ function handleColor(ticket, id) {
   });
 }
 
-// function handleStatusChange(ticket, id) {
-//     let dropdown = ticket.querySelector(".dropdown");
-//     let statusDrop = ticket.querySelector("select") ;
-//     statusDrop.addEventListener("change", (e) => {
-//         let idx = getTicketIdx(id);
-//         let dropVal = dropdown.value;
-//         let dropIdx = statusDrop.findIndex((i)=>{
-//             return i === dropVal ;
-//         })
-//         // dropdown.selectedIndex = dropIdx ;
-//         ticketsContArr[idx].status.selectedIndex = dropIdx;
-//         localStorage.setItem('Jira-Tickets', JSON.stringify(ticketsContArr));
-//     })
-// }
-
 function handleStatus(ticket, id) {
   let dropdown = ticket.querySelector(".dropdown");
   let statusDrop = ticket.querySelector("select");
@@ -299,19 +284,12 @@ function handleStatus(ticket, id) {
     let idx = getTicketIdx(id);
     let dropVal = statusDrop.value;
     console.log(dropVal);
-    // dropdown.selectedIndex = dropIdx ;
-
-    // console.log(ticketsContArr[idx].stat, ".............");
 
     ticketsContArr[idx].stat = dropVal;
     status.innerText = dropVal ;
 
-    // console.log(ticketsContArr[idx].stat, "............2");
-
     localStorage.setItem("Jira-Tickets", JSON.stringify(ticketsContArr));
 
-    // createTicket(ticket.text, ticket.ticketColor, ticket.ticketName, ticket.date, ticket.today, ticket.stat, ticket.ticketId);
-    // console.log(ticketsContArr[idx].stat, "............3");
   });
 }
 
