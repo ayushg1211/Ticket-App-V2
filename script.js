@@ -13,7 +13,6 @@ let lockClass = "fa-lock";
 let unlockClass = "fa-lock-open";
 let addFlag = false;
 let remFlag = false;
-// let statusDrop = ['To-Do', 'In-Progress', 'Done']
 let ticketsContArr = [];
 
 if (localStorage.getItem("Jira-Tickets")) {
