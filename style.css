@@ -60,11 +60,11 @@ body {
 }
 
 .yellow {
-  background-color: #eaba61;
+  background-color: #dbb162;
 }
 
 .green {
-  background-color: #00b894;
+  background-color: #06b592;
 }
 
 .purple {
@@ -72,11 +72,11 @@ body {
 }
 
 .blue {
-  background-color: #487eb0;
+  background-color: #3287d6;
 }
 
 .action-button-cont > *:hover {
-  background-color: #718093;
+  background-color: #778698;
 }
 
 .model-cont {
